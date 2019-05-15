@@ -5,8 +5,6 @@ import imagesLoaded from 'imagesloaded';
 
 import "./gallery.css"
 
-import Tab from "./Tab.js"
-import Tabs from "./Tabs.js"
 import ModalSlider from './ModalSlider.js';
 
 
@@ -79,27 +77,14 @@ export default class Gallery extends Component{
 
 
 	render(){
-		var modal = this.state.modalSlider !== null ? 
-		<ModalSlider close={(e) => this.modalClose(e)} src={this.state.modalSlider}/> : null
+		var modal = this.state.modalSlider ? <ModalSlider close={(e) => this.modalClose(e)} src={this.state.modalSlider}/> : null
 
 		return(
 			<main className="gallery">
 				{modal}
-				<h1>Gallery</h1>
-				<Tabs activeTabIndex={this.state.activeTabIndex} handleTabClick={(tabIndex) => this.handleTabClick(tabIndex)}>
-					<Tab label="Painting. Canvas, acrylic">
-						{this.tabContent("painting")}
-					</Tab>
-					<Tab label="Walls. English acrylic">
-						{this.tabContent("walls")}
-					</Tab>
-					<Tab label="Painting with molding. English acrylic">
-						{this.tabContent("painting_molding")}
-					</Tab>
-					<Tab label="Special">
-						{this.tabContent("special")}
-					</Tab>
-				</Tabs>
+        <div className="grid">
+            {this.tabContent("special")}
+        </div>
 			</main>					
 		)
 	}
