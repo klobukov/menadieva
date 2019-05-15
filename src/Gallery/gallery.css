@@ -1,0 +1,92 @@
+.gallery {
+	width: 100%;
+	margin-top: 3%;
+}
+
+.gallery h1 {
+	text-align: center;
+}
+
+.gallery nav {
+	margin-bottom: 1%;
+}
+
+.gallery nav li {
+	margin: 0.5%;
+}
+
+.grid-item, .grid-sizer {
+  width: 24%;
+}
+
+.grid-item {
+	margin-bottom: 5px;
+}
+
+.gutter-sizer { 
+	width: 1%;
+}
+
+.grid-item img {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+}
+
+.gallery__modal-slider-cont {
+	height: 100%;
+	width: 100%;
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.gallery__modal-cloack {
+	width: 100%;
+	height: 100%;
+	background: #3F3F3FFF;
+	opacity: 0.95;
+}
+
+.gallery__modal-slider {
+	display: block;
+	z-index: 999;
+	background: white;
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+
+.gallery__modal-slider {
+	height: 100%;
+	cursor: pointer;
+}
+
+.gallery__nextSrc{
+	top: 45%;
+	right: 5%;
+	background: url("strelkaRight.png") 0% 0% no-repeat;
+}
+
+.gallery__prevSrc{
+	top: 45%;
+	left: 5%;
+	background: url("strelkaLeft.png") 0% 0% no-repeat;
+}
+
+.gallery__close{
+	top: 5%;
+	right: 5%;
+	background: url("close.png") 0% 0% no-repeat;
+}
+
+.gallery__nextSrc, .gallery__prevSrc, .gallery__close {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	z-index: 9999;
+	cursor: pointer;
+	background-size: contain;
+}

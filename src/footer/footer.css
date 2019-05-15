@@ -1,0 +1,26 @@
+.footer {
+	margin-top: 3%;
+	padding-top: 1%;
+	height: 15%;
+	font-size: 1.5em;
+	background: #AFFFFFFF;
+}
+
+.footer div {
+	margin-top: 1%;
+}
+
+.footer-socials {
+	display: flex;
+	width: 30%;
+}
+
+.footer-socials a {
+	width: 50px;
+	margin-right: 3%;
+}
+
+.footer-socials img {
+	width: 100%;
+	vertical-align: top;
+}

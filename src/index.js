@@ -1,12 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React, { Fragment } from 'react'
+import {render} from 'react-dom'
+
+import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import Header from './header';
+import Gallery from './Gallery';
+import Footer from './footer';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+
+function App(){		
+	return(
+		<Fragment>
+			<Header/>
+			<Gallery />
+			<Footer />
+		</Fragment>
+	)
+}
+	
+
+
+
+
+// ========================================
+
+render(
+  <App />,
+  document.getElementById('root')
+);
+
