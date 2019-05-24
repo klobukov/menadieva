@@ -1,5 +1,5 @@
 .header {
-	padding: 2%;
+	padding: 2% 2% 3% 2%;
 	background: #AFFFFFFF;
 }
 
@@ -40,9 +40,6 @@
 }
 
 @media(min-width: 1400px){
-	.header {
-		min-height: 650px;
-	}
 	.photo_and_nav-photo {
 		border: none;
 	}

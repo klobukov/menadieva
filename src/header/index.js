@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './header.css'
-import Socials from '../Socials'
 
 export default class Header extends Component{
 	render(){
@@ -10,7 +9,6 @@ export default class Header extends Component{
 					<div className="photo_and_nav-photo">
 						<img src="content/author_photo.jpg" alt="author"/>
 					</div>
-					<Socials className="photo_and_nav-nav"/>
 				</div>
 				<div className="biography">
 					<h1>Biography</h1>
